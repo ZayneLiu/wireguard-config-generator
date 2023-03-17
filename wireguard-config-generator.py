@@ -12,7 +12,7 @@ import subprocess
 listen_port = "51820"
 
 # Set the endpoint
-endpoint = f"example.myip.com:{listen_port}"
+endpoint = f"77.68.84.20:{listen_port}"
 
 # Number of needed clients
 clients = 3
@@ -34,7 +34,7 @@ ipnet_tunnel_cidr = 24
 # Set allowed IPs (this should be the network of the server you want to access)
 # If you want to route all traffic over the VPN then set tunnel_0_0_0_0 = True, the network in allowed ips will then be ignored
 allowed_ips = "192.168.1.0/24"
-tunnel_0_0_0_0 = False
+tunnel_0_0_0_0 = True
 
 # If you need iptables rules then set iptables= "eth0" (replace eth0 with the name of your network card) or iptables = "" if no rules needed
 iptables = ""
